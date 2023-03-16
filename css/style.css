@@ -11,7 +11,14 @@
 
 body {
   background-color: #f5f5f5;
-  color: #4e4e4e;
+  color: var(--paracolor);
+}
+
+
+:root{
+  --whitecolor: #111;  
+  --blackcolor:#fff;
+  --paracolor:#4e4e4e;
 }
 
 h1,
@@ -20,11 +27,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: var(--whitecolor);
 }
 
 a {
-  color: #1e1e1e;
+  color: fff;
   transition: all 0.5s ease-in-out;
 }
 
@@ -137,7 +144,7 @@ a:hover {
 
 .title-s {
   font-weight: 600;
-  color: #1e1e1e;
+  color: var(--whitecolor);
   font-size: 1.1rem;
 }
 
@@ -154,7 +161,7 @@ a:hover {
 }
 
 .subtitle-a {
-  color: #4e4e4e;
+  color: var(--paracolor);
 }
 
 .line-mf {
@@ -193,7 +200,7 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: var(--blackcolor);
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -400,6 +407,65 @@ a:hover {
 //--//-->   NAVBAR
 ======================================*/
 
+/* Dark Mode Starts*/
+
+.dark-mode{
+  background-color: #1B1B1B;
+
+  --whitecolor:#c8d5e3;
+  --blackcolor:#121212;
+  --paracolor:#b4b0b0ee;
+
+}
+
+
+.navbar .container .collapse .circle-button{
+  display: inline-flex;
+  position: relative;
+}
+
+.navbar .container .collapse .circle-button {
+  width: 50px;
+  height: 50px;
+  border: 1px rgba(206, 202, 202, 0.285);
+  border-radius: 50%;
+  padding: 0.45vw;
+  cursor: pointer;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  
+}
+
+.navbar .container .collapse .circle-button img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: none;
+}
+
+.navbar .container .collapse .circle-button .sun img:hover{
+
+  background-color: transparent;
+} 
+
+.navbar .container .collapse .circle-button .moon img:hover{
+  background-color: transparent;
+  
+} 
+
+.navbar .container .collapse .circle-button .moon{
+  width: 23px;
+  height:23px;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+
+} 
+
+/* Dark Mode Ends */
+
 .navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
@@ -475,7 +541,7 @@ a:hover {
 
 .navbar-b.navbar-reduce {
   transition: all .5s ease-in-out;
-  background-color: #fff;
+  background-color: var(--blackcolor);
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -691,7 +757,7 @@ a:hover {
 }
 
 .skill-mf .progress {
-  background-color: #cde1f8;
+  background-color: #4e4e4e;
   margin: .5rem 0 1.2rem 0;
   border-radius: 0;
   height: .7rem;
@@ -870,6 +936,7 @@ a:hover {
 
 .card-blog .card-body {
   position: relative;
+  background-color:var(--blackcolor) ;
 }
 
 .card-blog .card-category-box {
@@ -906,7 +973,7 @@ a:hover {
 }
 
 .card-blog .card-description {
-  color: #4e4e4e;
+  color: var(--paracolor);
 }
 
 .card-blog .post-author {
@@ -914,7 +981,7 @@ a:hover {
 }
 
 .card-blog .post-date {
-  color: #4e4e4e;
+  color: #cde1f8;
   display: inline-block;
   float: right;
 }
@@ -1192,6 +1259,7 @@ footer .credits a {
   }
 
   .card-blog {
+    background-color: #111;
     margin-bottom: 3rem;
   }
 
