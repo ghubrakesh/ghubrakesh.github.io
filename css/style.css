@@ -570,7 +570,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #1B1B1B;
+  background-color: var(--whitecolor);
 }
 
 .navbar-b .navbar-brand {
@@ -749,11 +749,11 @@ a:hover {
 }
 
 .about-mf .about-img img {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 .skill-mf span {
-  color: #4e4e4e;
+  color: var(--paracolor);
 }
 
 .skill-mf .progress {
