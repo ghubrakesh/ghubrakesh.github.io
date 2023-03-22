@@ -983,7 +983,7 @@ a:hover {
 .card-blog .post-date {
   color: #cde1f8;
   display: inline-block;
-  float: right;
+  float: none;
 }
 
 /*======================================
