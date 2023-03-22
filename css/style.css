@@ -354,7 +354,7 @@ a:hover {
 
 /* Prelaoder */
 
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -377,7 +377,7 @@ a:hover {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
-}
+} */
 
 @-webkit-keyframes animate-preloader {
   0% {
